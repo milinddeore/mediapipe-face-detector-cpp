@@ -1,0 +1,1 @@
+g++ -std=c++11 '-Wl,-rpath,$$ORIGIN/lib'  face_detect.cpp -o face_detector -L../3rdparty/libs -ltensorflowlite -I ../3rdparty/tensorflow/lite/tools/make/downloads/flatbuffers/include  -I ../3rdparty/tensorflow/lite/tools/make/downloads/absl  -I ../3rdparty/include -I ../3rdparty/ `pkg-config --cflags opencv` `pkg-config --libs opencv`  -lstdc++ -ldl -lpthread -lm -lz
