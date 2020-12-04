@@ -22,3 +22,4 @@ lite/tools/make/downloads/flatbuffers/include  -I ../3rdparty/tensorflow/lite/to
 ```
 ./face_detector
 ```
+![ScreenShot](https://github.com/milinddeore/mediapipe-face-detector-cpp/blob/main/ScreenShot.png)
