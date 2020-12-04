@@ -1,3 +1,12 @@
+/*
+ * MIT Licence.
+ * Written by Milind Deore <tomdeore@gmail.com>
+ *
+ * Mediapipe tensroflow lite face detector model inference using c++ in
+ * standlone setup.
+ *
+ */
+
 #include <cstdio>
 #include <iostream>
 #include "tensorflow/lite/interpreter.h"
@@ -799,7 +808,7 @@ lgt_gen_anchors(SsdAnchorsCalculatorOptions options)
 
 int main(int argc, char* argv[]) {
 
-    const char* filename = "../models/face_detection_front.tflite";
+    const char* filename = "./models/face_detection_front.tflite";
 
     SsdAnchorsCalculatorOptions ssd_anchors_calculator_options(128, 128, 0.1484375, 0.75, 0.5, 0.5, 1.0, false, true, 4);
 
